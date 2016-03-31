@@ -18,7 +18,7 @@ function ySlide(str) {
   $('.btn-mobile-menu__icon').toggleClass('fa fa-list fa fa-angle-up animated fadeIn');
 }
 $(document).ready(function() {
-  if ((window.location.hash && window.location.hash == "#blog") || document.body.offsetWidth <= 960) {
+  if ((window.location.hash == "#blog" || document.body.offsetWidth <= 960) && !$('.panel-cover').hasClass('panel-cover--collapsed')) {
     xSlide();
   }
   $('a.blog-button').click(function() {
