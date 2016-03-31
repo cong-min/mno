@@ -4,6 +4,8 @@
 
 html, body {
   height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -182,10 +184,10 @@ pre {
   color: darken($gray, 2%);
 
   a {
-    color: $gray-darker;
+    color: darken($gray, 15%);
 
     &:hover {
-      color: $hover-color;
+      color: $gray-darker;
     }
 
   }
@@ -195,6 +197,7 @@ pre {
 .excerpt {
   margin: 0;
   font-size: .9em;
+  text-indent: 2em;
   color: $gray-dark;
 }
 
@@ -244,7 +247,8 @@ pre {
 }
 
   .content-wrapper__inner {
-    margin: 0 10%;
+    position: relative;
+    margin: 0 8%;
     padding: 50px 0;
   }
 

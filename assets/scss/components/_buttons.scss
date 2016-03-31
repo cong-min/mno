@@ -60,6 +60,11 @@
   font-size: .7em;
 }
 
+.blog-button{
+  border-color: $primary-color;
+  color: $primary-color;
+}
+
 // ------------------------------
 // MOBILE MENU BUTTON
 // ------------------------------
@@ -80,7 +85,10 @@
 
 .btn-mobile-menu__icon,
 .btn-mobile-close__icon {
-  position: relative;
+  position: absolute;
   top: 10px;
   color: #FFF;
+}
+.btn-mobile-menu__icon {
+  right: 15px;
 }

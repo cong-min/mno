@@ -1,0 +1,28 @@
+/*
+    qq: &#xe601;
+    weixin: &#xe603;
+    qzone: &#xe607;
+    weibo: &#xe605;
+    zhihu: &#xe604;
+    github: &#xe60b;
+    coding: &#xe602;
+    email: &#xe608;
+    wordpress: &#xe606;
+*/
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype'),
+    url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+    display: inline-block;
+    font-family: 'iconfont';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}

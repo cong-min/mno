@@ -32,6 +32,22 @@
 // ------------------------------
 // COVER PANEL
 // ------------------------------
+.go-back{
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 15px;
+  right: -45px;
+  padding: 5px;
+  color: darken($gray, 1%);
+  &:hover{
+    color: darken($gray, 20%);
+  }
+}
+.go-back-fixed{
+  display: none;
+}
 
 .panel-cover {
   display: block;
@@ -40,13 +56,14 @@
   width: 100%;
   max-width: none;
   height: 100%;
-  background: url(../images/background-cover.jpg) top left no-repeat $gray-darker;
+  background: url("https://congm.in/bing.php") center center no-repeat $gray-darker;
   background-size: cover;
+  @include transition(width 0.6s ease);
+  @include transform(translate3D(0, 0, 0));
 }
 
   .panel-cover--collapsed {
     width: 30%;
-    max-width: 700px;
   }
 
   .panel-cover--overlay {
@@ -61,6 +78,7 @@
   }
 
   .panel-cover__logo {
+    width: 100%;
     margin-bottom: .2em;
   }
 
@@ -93,7 +111,7 @@
     vertical-align: middle;
     position: relative;
     z-index: 800;
-    padding: 0 60px;
+    padding: 0 25px;
   }
 
   .panel-main__content {
@@ -124,7 +142,7 @@
 // ------------------------------
 
 .cover-navigation {
-  margin-top: 42px;
+  margin-top: 36px;
 }
 
   .cover-navigation--social {
@@ -156,7 +174,7 @@
 }
 
 .cover-slate {
-  @include linear-gradient(140deg, rgba($slate,.6) 20%, rgba(darken($slate, 20%),.8));
+  @include linear-gradient(140deg, rgba($slate,.4) 15%, rgba(darken($slate, 15%),.6));
 }
 
 .cover-disabled {
