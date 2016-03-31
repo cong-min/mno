@@ -733,7 +733,11 @@ input[type="tel"] {
     color: #CCCCCC; }
 
 .read-more {
-  margin-bottom: 1em; }
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  margin-top: 50px; }
+  .read-more .post-list__post-title {
+    font-size: 1.2em; }
 
 .read-more-item {
   display: inline;
@@ -742,14 +746,18 @@ input[type="tel"] {
   margin-bottom: 20pt; }
 
 .read-more-item-dim {
+  display: inline-block;
   color: #7b0f19;
-  font-size: .8em; }
+  font-size: .8em;
+  padding-bottom: .5em; }
 
 .read-more-item.read-more-item-left {
-  float: left; }
+  float: left;
+  margin-right: 20pt; }
 
 .read-more-item.read-more-item-right {
-  float: right; }
+  float: right;
+  margin-left: 20pt; }
 
 @media all and (max-width: 1100px) {
   .panel-title {

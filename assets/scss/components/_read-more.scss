@@ -3,7 +3,12 @@
 // ------------------------------
 
 .read-more {
-  margin-bottom: 1em;
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  margin-top: 50px;
+  .post-list__post-title{
+    font-size: 1.2em;
+  }
 }
 
 .read-more-item {
@@ -14,14 +19,18 @@
 }
 
 .read-more-item-dim {
+  display: inline-block;
   color: $hover-color;
   font-size: .8em;
+  padding-bottom: .5em;
 }
 
 .read-more-item.read-more-item-left {
   float: left;
+  margin-right: 20pt;
 }
   
 .read-more-item.read-more-item-right {
   float: right;
+  margin-left: 20pt;
 }
