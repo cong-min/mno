@@ -3,7 +3,7 @@ var ToIndex = {
   status: false,
   init: function(){
     ToIndex.status = true;
-    ToIndex.state("/test");
+    ToIndex.state("https://congm.in");
     ToIndex.stateListen();
   },
   state: function(url){
