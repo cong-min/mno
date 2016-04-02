@@ -2,10 +2,10 @@
 
 <nav class="pagination" role="navigation">
     {{#if prev}}
-        <a class="newer-posts pagination__newer btn btn-small btn-tertiary" href="{{page_url prev}}#blog"><i class="fa fa-chevron-left"></i> 上一页</a>
+        <a class="newer-posts pagination__newer btn btn-small btn-tertiary" href="{{page_url prev}}"><i class="fa fa-chevron-left"></i> 上一页</a>
     {{/if}}
     <span class="pagination__page-number">当前第 {{page}} 页 / 共 {{pages}} 页</span>
     {{#if next}}
-        <a class="older-posts pagination__older btn btn-small btn-tertiary" href="{{page_url next}}#blog">上一页 <i class="fa fa-chevron-right"></i></a>
+        <a class="older-posts pagination__older btn btn-small btn-tertiary" href="{{page_url next}}">上一页 <i class="fa fa-chevron-right"></i></a>
     {{/if}}
 </nav>

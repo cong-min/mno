@@ -37,9 +37,11 @@
 
 </head>
 <body class="{{body_class}}">
-
+    <!--[if lt IE 9]>
+    <div>请使用高端的浏览器!</div>
+    <![endif]-->
     <span class="mobile btn-mobile-menu">
-        <a href="/#blog" class="go-back-fixed"><i class="fa fa-reply"></i></a>
+        <a href="/" class="go-back-fixed"><i class="fa fa-reply"></i></a>
         <i class="fa fa-list btn-mobile-menu__icon"></i>
         <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
     </span>
@@ -60,15 +62,15 @@
     <!-- Compatibility for Ghost 0.7.0: http://dev.ghost.org/no-more-jquery/ -->
     <script type="text/javascript">  
       if (typeof jQuery == 'undefined') {
-        document.write('<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></'+'script>');
+        document.write('<script src="{{asset "js/jquery-1.11.3.min.js"}}"></'+'script>');
       }
     </script>
-    
+
     {{! The main JavaScript file }}
-    <script type="text/javascript" src="{{asset "js/main.js"}}"></script>
+    <script src="{{asset "js/main.js"}}"></script>
 
     {{! Highlight.js }}
-    <script type="text/javascript" src="{{asset "js/highlight.pack.js"}}"></script>
+    <script src="{{asset "js/highlight.pack.js"}}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
