@@ -1,34 +1,3 @@
-document.domain = "congm.in";
-var ToIndex = {
-  status: false,
-  init: function(){
-    ToIndex.status = true;
-    ToIndex.state("https://congm.in");
-    ToIndex.stateListen();
-  },
-  state: function(url){
-    if(!window.history.pushState){
-      location.href = url;
-    }else{
-      xSlideOut();
-      window.history.pushState({status: "xSlideOut"}, "", url);
-    }
-  },
-  stateListen: function(){
-    window.addEventListener('popstate', function(e){
-      if(!e.state){
-        ToIndex.status = false;
-        xSlideIn();
-      }else{
-        switch(e.state.status){
-          case "xSlideOut":
-            xSlideOut();
-            break;
-        }
-      }
-    }, false);
-  }
-};
 var iUp = (function() {
   var t = 0,
       d = 150,
@@ -79,27 +48,27 @@ function ySlide(str) {
   }
   $('.btn-mobile-menu__icon').toggleClass('fa fa-list fa fa-angle-up animated fadeIn');
 }
-$(document).ready(function() {
-  xSlideIn();
+$(function() {
   $(".iUp").each(function(i, e) {
     iUp.up(e);
   });
-  $(".btn-mobile-menu__icon").click(function(){
+  $(".btn-mobile-menu__icon").on("click", function(){
     ySlide();
   });
-  $(".index-button").click(function(){
-    if(!ToIndex.status){
-      ToIndex.init();
+  $(".index-button").on("click", function(){
+    if(window.location.host != "congm.in"){
+      xSlideOut();
+      setTimeout(function(){
+        window.location.href = "https://congm.in";
+      }, 600)
     }
-  });
-  $(".blog-button").click(function(){
-    // TODO
-    xSlideOut();
-    setTimeout(function(){
-
-    });
   });
 });
 $(document.links).filter(function() {
     return (this.hostname != window.location.hostname) && (this.target != '_self');
 }).attr('target', '_blank');
+window.onload = function(){
+  if(window.location.host != "congm.in") {
+    xSlideIn();
+  }
+};
