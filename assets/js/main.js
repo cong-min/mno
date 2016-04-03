@@ -49,6 +49,9 @@ function ySlide(str) {
   $('.btn-mobile-menu__icon').toggleClass('fa fa-list fa fa-angle-up animated fadeIn');
 }
 $(function() {
+  if(window.location.host != "congm.in") {
+    xSlideIn();
+  }
   $(".iUp").each(function(i, e) {
     iUp.up(e);
   });
@@ -67,8 +70,3 @@ $(function() {
 $(document.links).filter(function() {
     return (this.hostname != window.location.hostname) && (this.target != '_self');
 }).attr('target', '_blank');
-window.onload = function(){
-  if(window.location.host != "congm.in") {
-    xSlideIn();
-  }
-};
