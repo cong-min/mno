@@ -76,6 +76,9 @@
 
 .panel-cover--collapsed {
   width: 30%;
+  .iUp {
+    @include transition(all 0 cubic-bezier(0.19, 1, 0.22, 1));
+  }
 }
 
 .panel-cover--overlay {
