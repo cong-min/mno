@@ -117,8 +117,8 @@
         left: 0;
         width: 100%;
         padding: 20px 0;
-        background: rgba($gray-darkest,.98);
-        border-bottom: 1px solid rgba(255,255,255,.15);
+        background: rgba($gray-darkest, .98);
+        border-bottom: 1px solid rgba(255, 255, 255, .15);
 
         &.visible {
           display: block;
@@ -158,13 +158,14 @@
         }
 
       }
-
-      .navigation__item {
-        width: 100%;
-        margin: 0 0 .4em 0;
-        a {
-          padding: 10px 20px;
-          font-size: .9em;
+      .cover-navigation--primary {
+        .navigation__item {
+          width: 100%;
+          margin: 0 0 .4em 0;
+          a {
+            padding: 10px 20px;
+            font-size: .9em;
+          }
         }
       }
 
@@ -186,10 +187,11 @@
     margin-right: 0;
     margin-left: 0;
   }
-
-  .navigation__item a {
-    padding: 8px 16px;
-    font-size: .8em;
+  .cover-navigation--primary {
+    .navigation__item a {
+      padding: 8px 16px;
+      font-size: .8em;
+    }
   }
 
 }

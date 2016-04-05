@@ -8,6 +8,10 @@
 
 Demo：https://i.congm.in
 
+---
+
+### 开发
+
 start
 ```
 sudo NODE_ENV=production pm2 start index.js --name "ghost"
@@ -17,5 +21,5 @@ sudo NODE_ENV=production pm2 restart index.js --name "ghost"
 
 sass
 ```
-sass --watch assets/scss/mcno.scss:assets/css/mcno.css
+sass --watch assets/scss/mcno.scss:assets/css/mcno.css --style compressed
 ```
