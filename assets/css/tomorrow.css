@@ -74,10 +74,11 @@
 
 .hljs {
   display: block;
-  overflow-x: auto;
-  /*background: white;*/
   color: #4d4d4c;
   padding: 0.5em;
+  white-space: pre-wrap !important;
+  height: auto;
+  word-break: break-all;
   -webkit-text-size-adjust: none;
 }
 
