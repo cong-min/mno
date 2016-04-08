@@ -18,8 +18,7 @@ sudo NODE_ENV=production pm2 start index.js --name "ghost"
 //or
 sudo NODE_ENV=production pm2 restart index.js --name "ghost"
 
-sudo pm2 save
-sudo pm2 startup
+sudo pm2 save & sudo pm2 startup
 ```
 
 sass
