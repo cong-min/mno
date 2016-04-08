@@ -54,9 +54,6 @@
         </div>
     </div>
 
-    {{! Ghost Footer }}
-    {{ghost_foot}}
-
     <!-- Compatibility for Ghost 0.7.0: http://dev.ghost.org/no-more-jquery/ -->
     <script type="text/javascript">  
       if (typeof jQuery == 'undefined') {
@@ -70,5 +67,8 @@
     {{! Highlight.js }}
     <script src="{{asset "js/highlight.pack.js"}}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+
+    {{! Ghost Footer }}
+    {{ghost_foot}}
 </body>
 </html>
