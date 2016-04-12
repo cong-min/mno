@@ -1,0 +1,7 @@
+<nav class="cover-navigation cover-navigation--primary">
+    <ul class="navigation navigation--btns">
+        {{#foreach navigation}}
+            <li class="navigation__item"><a href="{{url}}" target="{{#if current}}_self{{/if}}" title="我的{{label}}">{{label}}</a></li>
+        {{/foreach}}
+    </ul>
+</nav>

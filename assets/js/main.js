@@ -62,6 +62,7 @@ $(function() {
   $(".btn-mobile-menu__icon").on("click", function(){
     ySlide();
   });
+  $(".navigation--btns .navigation__item:first").addClass("index-button");
   $(".index-button").on("click", function(){
     if(window.location.host != "congm.in"){
       xSlideOut();
