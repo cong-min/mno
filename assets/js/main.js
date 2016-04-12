@@ -51,9 +51,10 @@ function ySlide() {
   $('.btn-mobile-menu__icon').toggleClass('fa fa-list fa fa-angle-up animated fadeIn');
 }
 $(function() {
+  $(".navigation--btns .navigation__item:first a").addClass("index-button").attr('target', '_self');
   if(window.location.host != "congm.in") {
     xSlideIn();
-  }else {
+  }else{
     xSlideOut();
   }
   $(".iUp").each(function(i, e) {
@@ -62,7 +63,6 @@ $(function() {
   $(".btn-mobile-menu__icon").on("click", function(){
     ySlide();
   });
-  $(".navigation--btns .navigation__item:first").addClass("index-button").attr('target', '_self');;
   $(".index-button").on("click", function(){
     if(window.location.host != "congm.in"){
       xSlideOut();
