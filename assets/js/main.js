@@ -52,7 +52,7 @@ function ySlide() {
 }
 $(function() {
   $(".navigation--btns .navigation__item:first a").addClass("index-button").attr('target', '_self');
-  if(window.location.host != "congm.in") {
+  if(window.location.host == "i.congm.in") {
     xSlideIn();
   }else{
     xSlideOut();
@@ -64,7 +64,7 @@ $(function() {
     ySlide();
   });
   $(".index-button").on("click", function(){
-    if(window.location.host != "congm.in"){
+    if(window.location.host == "i.congm.in"){
       xSlideOut();
       setTimeout(function(){
         window.location.href = "https://congm.in";
