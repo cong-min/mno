@@ -1,8 +1,8 @@
-# Mcno
+# Mno
 
 ## My Ghost Blog Theme
 
-`Mcno` 是一个简约美观响应式的 Ghost 主题。
+`Mno` 是一个简约美观响应式的 Ghost 主题。
 
 经历了[Dale Anthony 的 Uno](https://github.com/daleanthony/uno) -> [onevcat 的 Vno](https://github.com/onevcat/vno) 的衍生。
 
@@ -23,5 +23,5 @@ sudo pm2 save & sudo pm2 startup
 
 sass
 ```
-sass --watch assets/scss/mcno.scss:assets/css/mcno.css --style compressed
+sass --watch assets/scss/mno.scss:assets/css/mno.css --style compressed
 ```
