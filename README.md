@@ -2,26 +2,10 @@
 
 ## My Ghost Blog Theme
 
-`Mno` 是一个简约美观响应式的 Ghost 主题。
+`mno` 是一个简约美观响应式的 Ghost 主题。
 
 经历了[Dale Anthony 的 Uno](https://github.com/daleanthony/uno) -> [onevcat 的 Vno](https://github.com/onevcat/vno) 的衍生。
 
 Demo：https://i.congm.in
 
 ---
-
-### 开发
-
-start
-```
-sudo NODE_ENV=production pm2 start index.js --name "ghost"
-//or
-sudo NODE_ENV=production pm2 restart index.js --name "ghost"
-
-sudo pm2 save & sudo pm2 startup
-```
-
-sass
-```
-sass --watch assets/scss/mno.scss:assets/css/mno.css --style compressed
-```

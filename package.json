@@ -1,4 +1,8 @@
 {
-  "name": "Mno",
-  "version": "0.2.0"
+  "name": "mno",
+  "version": "2.0.0",
+  "author": {
+    "name": "Cong Min",
+    "email": "i@congm.in"
+  }
 }
